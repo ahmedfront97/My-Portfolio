@@ -855,7 +855,7 @@ html {
                 padding-top: 30px !important;
                 padding-left: 10px !important;
                 border-top: 0 !important;
-                height: 250px;
+                height: 220px;
                 h6{
                     text-transform: capitalize;
                     color: var(--border-and-active);
@@ -882,9 +882,7 @@ html {
                     text-align: left;
                     margin-bottom: 0;
                     padding-left: 0 !important;
-                    height: 100px;
-                    overflow: scroll;
-                    padding-bottom: 0 !important;
+                  
                     
                 }
           
