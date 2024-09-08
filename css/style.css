@@ -855,6 +855,7 @@ html {
                 padding-top: 30px !important;
                 padding-left: 10px !important;
                 border-top: 0 !important;
+                height: 250px;
                 h6{
                     text-transform: capitalize;
                     color: var(--border-and-active);
@@ -873,7 +874,7 @@ html {
                 p{
                     text-transform: capitalize;
                     font-style: italic;
-                    font-size: 10px !important;
+                    font-size: 8px !important;
                     color: grey;
                     padding-top: 0 !important;
                     padding: 8px;
@@ -881,6 +882,9 @@ html {
                     text-align: left;
                     margin-bottom: 0;
                     padding-left: 0 !important;
+                    height: 100px;
+                    overflow: scroll;
+                    padding-bottom: 0 !important;
                     
                 }
           
@@ -893,6 +897,7 @@ html {
 
     /* start portfolio */
     .my-portfolio{
+        margin-top: 0 !important;
         h3{
             font-weight: 900;
         }
