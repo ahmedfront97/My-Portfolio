@@ -21,12 +21,13 @@ html {
     text-align: center;
     border-radius: 5px;
     color: var(--border-and-active);
-    right: 5px;
+    right: 15px;
     top: 80vh;
     cursor: pointer;
     position: fixed;
     opacity: 0;
     transition: 1s;
+    background-color: white;
 
 }
 
@@ -40,6 +41,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none !important;
     ul{
         padding: 0;
         margin: 0;
@@ -598,11 +600,11 @@ html {
     height: 200px;
     background-color: var(--banner-background);
     .logo{
-        width: 50px;
-        height: 50px;
+        width: 40px !important;
+        height: 40px !important;
         padding-top: 5px;
         img{
-            width: 50px !important;
+            width: 40px !important;
         }
     }
     ul{
@@ -611,13 +613,13 @@ html {
         list-style: none;
         padding: 0;
         margin: 0;
-        width: 70%;
+        width: 80%;
        
         li{
-            margin-left: 20px;
+            margin-left: 10px;
             a{
                 text-decoration: none;
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: bold;
                 color: var(--border-and-active);
             }
@@ -709,5 +711,223 @@ html {
        
 }
 
+   
+
+
+/* start media from 600px */
+
+@media only screen and (max-width : 600px){
     
+    /* start banner */
+    .banner{
+        margin-top: 50px;
+        .container{
+            .banner-section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .banner-content {
+                    p{
+                        color: var(--links-color);
+                        text-transform: capitalize;
+                        font-weight: 900;
+                    }
+                    
+                    h3{
+                        font-size: 30px !important;
+                        text-transform: capitalize;
+                        font-weight: 900;
+                    }
+                        span{
+                            color: var(--border-and-active);
+                        }
+
+                    
+                    button{
+                        margin-top: 100px;
+                        width: 150px;
+                        height: 50px;
+                        border: 0;
+                        background-color: var(--border-and-active);
+                        border-radius: 5px;
+                        color: var(--navColor);
+                        font-size: 18px;
+                        padding: 8px;
+                        font-weight: 900 !important;
+                    }
+                }    
+                    
+            }
+            
+        }
+
+    }
+    /* end banner */
+
+
+    /* start skills */
+    .skills{
+        margin-top: 50px;
+        .container{
+            h3{
+                width: 200px;
+                color: var(--border-and-active);
+                text-align: left;
+                padding: 8px;
+                font-weight: 900;
+            }
+            hr{
+                width: 50px;
+                margin-left: 30px;
+                border: 3px solid var(--border-and-active);
+                margin-top: 0;
+            }
+            .skills-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                div{
+                    width: 60px;
+                    height: 70px;
+                    text-align: center;
+                    p{
+                        margin: 0;
+                        color: var(--border-and-active);
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                    }
+                    image{
+                        width: 30px !important;
+                        height: 30px !important;
+                        max-width: 70% !important;
+                        
+                    };
+                }
+            }
+        }
+    }
+    /* end skills */
+
+
+
+    /* start about */
+
+    .about{
+        margin-top: 50px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .about-img{
+            }
+            .about-content{
+                padding-left: 0 !important;
+                h6{
+                    text-transform: capitalize;
+                    color: var(--border-and-active);
+                    font-weight: 900;
+                }
+                h3{
+                   
+                    text-transform: capitalize;
+                    font-weight: 900;
+                    span{
+                        color: var(--border-and-active);
+                    }
+                }
+                p{
+                    text-transform: capitalize;
+                    font-style: italic;
+                    font-size: 12px !important;
+                    color: var(--border-and-active);
+                    border: 2px solid var(--border-and-active) !important;
+                    padding: 8px;
+                    border-radius: 5px;
+                    text-align: left;
+                }
+          
+            }
+        }
+    }
+    /* end about */
+
+
+
+    /* start portfolio */
+    .my-portfolio{
+        h3{
+            font-weight: 900;
+        }
+    }
+
+    .testimonials{
+        h3{
+            font-weight: 900 !important;
+        }
+        .content{
+            width: 100%;
+            border: 3px dotted var(--border-and-active);
+            border-bottom: 4px solid var(--border-and-active);
+            border-radius: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            p{
+                font-size: 10px;
+                text-align: center;
+                text-transform: capitalize;
+                color: var(--border-and-active);
+                font-style: italic;
+                margin-bottom: 0;
+                display: inline;
+                font-weight: 900 !important;
+                
+            }
+            .stars{
+               
+                color: var(--border-and-active);
+                
+            }
+            .name{
+                padding-right: 10px;
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 15px;
+            }
+        }
+    }
+    /* end portfolio */
+
+
+    /* strart contact me */
+    .contact-me{
+        h3{
+            font-weight: 900;
+        }
+        .container {
+            label{
+                font-weight: 900 !important;
+            }
+            
+            textarea{
+                font-size: 12px;
+            }
+
+        }
+    }
+    /* end contact me */
+
+
+
+
+}
+
+
+
+
+
+/* end media from 600px */
     
