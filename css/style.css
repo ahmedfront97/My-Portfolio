@@ -612,6 +612,7 @@ html {
 .footer{
     display: flex;
     justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 50px;
     height: 200px;
@@ -648,6 +649,16 @@ html {
             color: var(--border-and-active);
             padding: 3px;
         }
+    }
+}
+
+.social{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    i{
+        color: var(--border-and-active);
+        padding: 10px;
     }
 }
 /* end footer */
@@ -855,7 +866,7 @@ html {
                 padding-top: 30px !important;
                 padding-left: 10px !important;
                 border-top: 0 !important;
-                height: 220px;
+                
                 h6{
                     text-transform: capitalize;
                     color: var(--border-and-active);
@@ -895,7 +906,7 @@ html {
 
     /* start portfolio */
     .my-portfolio{
-        margin-top: 0 !important;
+        margin-top: 20 !important;
         h3{
             font-weight: 900;
         }
