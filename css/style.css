@@ -313,7 +313,7 @@ html {
 
 /* start portfolio */
 .my-portfolio{
-    margin-top: 50px;
+    margin-top: 20px !important;
     .container{
         h3{
             color: var(--border-and-active);
